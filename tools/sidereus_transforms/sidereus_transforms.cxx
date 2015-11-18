@@ -10,10 +10,6 @@
  * $Id: Exp$
  */
 
-#ifdef HAVE_CONFIG_H
-#include "config.h"
-#endif
-
 #include <sidereus/transform_coord.hxx>
 #include <sidereus/julian_day.hxx>
 
