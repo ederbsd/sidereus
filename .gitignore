@@ -1,0 +1,11 @@
+autom4te.cache
+build
+*.tmp
+*.bak
+*.sw
+*~
+*.o
+*.lo
+.deps
+.libs
+
