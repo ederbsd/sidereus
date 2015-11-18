@@ -1,0 +1,31 @@
+#!/bin/sh
+
+ABORT=no
+
+check_cmake()
+{
+  (cmake --version) </dev/null >/dev/null 2>&1 || {
+    echo "Error: cmake (version 2.8 or later) must be present to configure and install Sidereus library"
+    echo ""
+    echo "cmake might be available as a package for your system,"
+    echo "or can be downloaded from http://cmake.org"
+    ABORT=yes
+  }
+}
+
+check_build()
+{
+  if [ ! -d "build" ]; then
+    mkdir build
+  fi
+  cd build
+  rm -f CMakeCache.txt
+  cmake -DCMAKE_BUILD_TYPE=Release $@ .. && make
+  #cmake -DCMAKE_BUILD_TYPE=Debug $@ .. && make
+}
+
+check_cmake
+check_build
+test "$ABORT" = yes && exit -1
+
+exit 0

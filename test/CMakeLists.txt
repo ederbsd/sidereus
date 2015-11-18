@@ -15,7 +15,7 @@ add_test(sidereus_test sidereus_test)
 # Parallax test.
 add_executable(parallax_test parallax_test.cxx)
 target_link_libraries(parallax_test sidereus)
-add_test(parallax_test parallay_test)
+add_test(parallax_test parallax_test)
 
 # Nutation test.
 add_executable(nutation_test nutation_test.cxx)
