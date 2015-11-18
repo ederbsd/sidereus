@@ -1,0 +1,31 @@
+/**
+ * @mainpage
+ *
+ * @image html sid_logo.png
+ * @image latex sid_logo.eps
+ *
+ * @section sidereus_intro Introduction
+ *
+ * This document describes the implementation of the SIDEREUS
+ * Library.
+ *
+ * Sidereus C++ Astronomy Librarie containing Celestial Mechanics,
+ * Nutation, Precession, Julian Day, Sidereal Time, etc...
+ *
+ * @section sidereus_deps Dependencies
+ *
+ * SIDEREUS uses the C++ Standard Library ( http://gcc.gnu.org/libstdc++/ )
+ * and GENESIS Library of general purpose classes ( http://sites.google.com/site/edersondemoura/ ).
+ *
+ * @section sidereus_what Provided Mechanisms
+ *
+ * - @link sidereus::julian_day Julian Day @endlink;
+ * - @link sidereus::nutation Nutation @endlink;
+ * - @link sidereus::precession Precession @endlink;
+ * - @link sidereus::sidereal_time Sidereal Time @endlink;
+ * - @link sidereus::transform_coord Transform Coordinates @endlink;
+ *
+ * @section sidereus_authors Authors
+ *
+ * @verbinclude AUTHORS
+ */
