@@ -23,7 +23,6 @@ endif()
 
 target_link_libraries(sidereus pthread)
 target_link_libraries(sidereus rt)
-#target_link_libraries(sidereus genesis)
 target_link_libraries(sidereus /usr/local/lib/libgenesis.so)
 
 install(TARGETS sidereus
