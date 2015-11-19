@@ -8,9 +8,7 @@ set(VERSION_PATCH "0")
 set(VERSION "${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_PATCH}")
 
 # Set envs.
-#set(CMAKE_BUILD_TYPE Release)
-#set(CMAKE_BUILD_TYPE Debug)
-set(CMAKE_CXX_FLAGS "-Wall -DNDEBUG -g -O3 -std=c++11 -L/usr/home/edm/workspace/me/genesis/build/genesis -I/usr/home/edm/workspace/me/genesis")
+set(CMAKE_CXX_FLAGS "-Wall -DNDEBUG -g -O3 -std=c++11 -I/usr/local/include") 
 
 # Enable test in project.
 enable_testing()
